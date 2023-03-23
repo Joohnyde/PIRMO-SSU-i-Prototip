@@ -1,0 +1,23 @@
+[
+    {
+        "title":"Списак категорија",
+        "desc1":"У овом одjељку можете видjети и измјенити постојеће категорије",
+        "desc2":"изменом текста",
+        "desc3":"у уоквиреним пољима",
+        "save":"Потврди"
+    },
+    {
+        "title":"Spisak kategorija",
+        "desc1":"U ovom odjeljku možete vidjeti i izmjeniti postojeće kategorije",
+        "desc2":"izmenom teksta",
+        "desc3":"u uokvirenim poljima",
+        "save":"Potvrdi"
+    },
+    {
+        "title":"Lista e kategorive",
+        "desc1":"Në këtë seksion mund të shikoni dhe modifikoni kategoritë ekzistuese",
+        "desc2":"duke ndryshuar tekstin",
+        "desc3":"në fushat e kornizuara",
+        "save":"Konfirmo"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "naslovi":["X6 пали гуме склони се са пута", "X6 pali gume skloni se sa puta","Gomat e dritave X6 largohen nga rruga"],
+        "datum":"2012-11-02",
+        "kategorije":["Хроника", "Hronika", "Kronikë"],
+        "boja":"#800000"
+    },
+    {
+        "id":"2",
+        "naslovi":["Више се ни не узбудим кад видим 10 сома на столу", 
+                    "Više se ni ne uzbudim kad vidim 10 soma na stolu",
+                    "Unë as nuk emocionohem më kur shoh 10 mijë në tryezë"],
+        "datum":"2015-04-22",
+        "kategorije":["Економија", "Ekonomija", "Ekonomisë"],
+        "boja":"#fcba03"
+    },
+    {
+        "id":"3",
+        "naslovi":["Зашто твоја жена цима кримосе за генгбенг", "Zašto tvoja žena cima krimose za gengbeng","Pse gruaja juaj i quan kriminelët për një bandë"],
+        "datum":"2001-9-11",
+        "kategorije":["Спорт", "Sport", "Sport"],
+        "boja":"#213894"
+    },
+    {
+        "id":"3",
+        "naslovi":["Док ме хапсе само Хуго Бос", "Dok me hapse samo Hugo Boss","Ndërsa vetëm Hugo Boss më arreston"],
+        "datum":"2022-02-08",
+        "kategorije":["Хроника", "Hronika", "Kronikë"],
+        "boja":"#800000"
+    }
+]

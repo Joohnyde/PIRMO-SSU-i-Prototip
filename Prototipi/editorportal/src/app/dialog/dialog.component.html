@@ -1,0 +1,25 @@
+<div class="row">
+      <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"> Увоз садржаја</h4>
+        <p class="card-description">
+            Молимо Вас да унесете линк странице која Вас инспирише <span style="opacity: .3;"><br>(За сада само <a style="cursor:pointer;
+              text-decoration: underline;" (click)="setLink()">https://www.nomtek.com/blog/flutter-vs-react-native)</a></span>
+        </p>
+        <form class="forms-sample">
+          <div class="form-group">
+            <label for="exampleInputUsername1">
+              Линк ка страници:</label>
+            <input (keyup)="onKey($event)" type="text" class="form-control" id="exampleInputUsername1" value="{{link}}" placeholder="Линк">
+          </div>
+
+
+          <button (click)="salji()" [disabled]="obradaUToku()" type="submit" class="btn btn-primary me-2">
+            Изабери</button>
+          <button (click)="otkazi()" class="btn btn-light">
+            Откажи</button>
+        </form>
+      </div>
+    </div>
+
+</div>

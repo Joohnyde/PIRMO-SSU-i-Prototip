@@ -1,0 +1,35 @@
+[
+    {
+        "formDesc":["Измјена објаве", "Додавање нове објаве"],
+        "title":"Наслов",
+        "category":"Категорија",
+        "thumbnail":"Насловница",
+        "upload":"Отпреми",
+        "save":"Сачувај",
+        "cancel":"Откажи",
+        "select":"Одабери",
+        "opis":"Унесите опис"
+    },
+    {
+        "formDesc":["Izmjena objave","Dodavanje nove objave"],
+        "title":"Naslov",
+        "category":"Kategorija",
+        "thumbnail":"Naslovna slika",
+        "upload":"Otpremi",
+        "save":"Sačuvaj",
+        "cancel":"Otkaži",
+        "select":"Odaberi",
+        "opis":"Unesite opis"
+    },
+    {
+        "formDesc":["Redakto postimin","Shtimi i një postimi të ri"],
+        "title":"Titulli",
+        "category":"Kategoria",
+        "thumbnail":"Imazhi i titullit",
+        "upload":"Ngarkoni",
+        "save":"Ruaj",
+        "cancel":"Anulo",
+        "select":"Zgjidhni",
+        "opis":"Futni një përshkrim"
+    }
+]

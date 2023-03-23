@@ -1,0 +1,63 @@
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="home-tab">
+
+
+                <div id="finiSmooth2" class="tab-content tab-content-basic">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview">
+                        <div class="row">
+                            <div class="col-sm-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">{{content[getLang()].title}}</h4>
+                                        <p class="card-description">
+                                            {{content[getLang()].desc1}}
+                                            <code>{{content[getLang()].desc2}}</code> {{content[getLang()].desc3}}
+                                        </p>
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 30%">Назив категорије</th>
+                                                        <th style="width: 30%">Naziv kategorije</th>
+                                                        <th style="width: 30%">Emri i kategorisë</th>
+                                                        <th style="width: 10%"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!--<tr (click)="setSelectedForEditing(post)" *ngFor="let post of getFiltered()" 
+                            
+                            [ngClass]="{'selectedPostInTable': selectedForEditing === post}"
+                            >
+                              <td>{{post.naslovi[getLang()]}}</td>
+                              <td>{{getParsedDatum(post.datum)}}</td>
+                              <td><label class="badge badge-success" style="color: {{post.boja}};
+                                border: 1px solid {{post.boja}};">{{post.kategorije[getLang()]}}</label></td>
+                            </tr>-->
+                            <tr *ngFor="let item of allCats; let i = index" [attr.data-index]="i">
+                                <td *ngFor="let katnaz of item.kategorije"><label #myLab (keydown.backspace)="isAllowed()"
+                                    (keydown.delete)="isAllowed()"
+                                        (input)="onNameChange($event)" contenteditable="true"
+                                        class="badge badge-success" [style.color]=item.boja style="font-size: 20px; border: 1px solid black;"
+                                        [style.border-color]=item.boja>{{katnaz.naziv}}</label></td>
+                           
+                                                        <td><button [disabled]="!isButtonDisabled(i)" (click)="sendNewCat(i)" class="btn btn-primary me-2">
+                                                            {{content[getLang()].save}}</button></td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

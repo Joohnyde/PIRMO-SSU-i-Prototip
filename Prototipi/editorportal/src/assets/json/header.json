@@ -1,0 +1,36 @@
+[
+    {
+    "hello":"Здраво",
+    "welcome":"Добродошли на уреднички портал",
+    "choosecattitle":"Изаберите категорију",
+    "choosecatdesc":"Филтрирајте вијести из категорије",
+    "search":"Претрага",
+    "logout":"Одјавите се",
+    "menuitem1":"Постови",
+    "menuitem2":"Категорије",
+    "addNew":"Креирајте нови"
+    },
+    {
+    "hello":"Zdravo",
+    "welcome":"Dobrodošli na urednički portal",
+    "choosecattitle":"Izaberite kategoriju",
+    "choosecatdesc":"Filtrirajte vijesti iz kategorije",
+    "search":"Pretraga",
+    "logout":"Odjavite se",
+    "menuitem1":"Postovi",
+    "menuitem2":"Kategorije",
+    "addNew":"Kreirajte novi"
+    },
+    {
+    "hello":"Përshëndetje",
+    "welcome":"Mirëserdhe në portalin editorial",
+    "choosecattitle":"Zgjidhni një kategori",
+    "choosecatdesc":"Filtro lajmet sipas kategorisë",
+    "search":"Kërko",
+    "logout":"Dil",
+    "menuitem1":"Njoftimet",
+    "menuitem2":"Kategoritë",
+    "addNew":"Krijoni të reja"
+    
+    }
+    ]

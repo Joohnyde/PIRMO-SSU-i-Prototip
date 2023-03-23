@@ -1,0 +1,90 @@
+<div class="row">
+    <div class="col-md-5 grid-margin stretch-card" style="height: 450px;">
+      <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{ (post!=undefined)?post.naslovi[contentEditedLang]:naslovi[contentEditedLang]}}</h4>
+        <p class="card-description">
+          {{content[getLang()].formDesc[post!=undefined?0:1]}}
+        </p>
+        <form class="forms-sample">
+          <div class="form-group">
+            <label for="exampleInputUsername1">
+              {{content[getLang()].title}}</label>
+            <input (keyup)="onKey($event)" type="text" class="form-control" id="exampleInputUsername1" value="{{bpost.naslovi[contentEditedLang]}}" placeholder="{{ (post!=undefined)?post.naslovi[contentEditedLang]:naslovi[contentEditedLang]}}">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">
+              {{content[getLang()].category}}</label>
+            <select #mySelect (change)='onOptionsSelected(mySelect.selectedIndex)' class="form-control" id="exampleFormControlSelect2">
+              <option *ngFor="let iz of getCats();let i = index" [attr.data-index]="i" [selected]="i===bpost.kategorije">{{iz}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>
+              {{content[getLang()].thumbnail}}</label>
+            <input type="file" name="img[]" class="file-upload-default">
+            <div class="input-group col-xs-12">
+              <input type="text" class="form-control file-upload-info" value="{{getFile()}}" disabled placeholder="
+              {{content[getLang()].select}}">
+              <span class="input-group-append">
+
+                <button class="file-upload-browse btn btn-primary" type="button" 
+                #buttonPicker="appFilePicker" mat-raised-button color="primary" 
+                appFilePicker [multiple]="_multiple" (filesChanged)="_onFilesChanged($event)"
+                 (filesReset)="_onReset()">
+                  {{content[getLang()].upload}}</button>
+
+                  
+              </span>
+            </div>
+          </div>
+
+          <button (click)="salji()" [disabled]="obradaUToku" type="submit" class="btn btn-primary me-2">
+            {{content[getLang()].save}}</button>
+          <button (click)="otkazi()" class="btn btn-light">
+            {{content[getLang()].cancel}}</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-5" style="margin-left: 20px; width: 100%;" >
+      <div class="card" style="height: 450px;">
+        <div class="card-body">
+        <!-- <p class="card-description">
+          {{getContentEditingLang()}}
+        </p> -->
+
+        <div class="col-sm-10" style="height:400px;">
+          <div style="height: 100%; width: 530px;" class="NgxEditor__Wrapper">
+            <ngx-editor-menu [editor]="mneEditor" [toolbar]="toolbar">
+            </ngx-editor-menu>
+            <ng-scrollbar style="max-height: 320px;">
+              <ngx-editor height="100px" minHeight="50px" [editor]="mneEditor" id="description"
+              [(ngModel)]="bpost.sadrzaji[contentEditedLang]"
+              [placeholder]="content[contentEditedLang].opis" required>
+              </ngx-editor>
+          </ng-scrollbar>
+          </div>
+          <!-- <span class="text-danger"
+            *ngIf="(firstFormGroupControl['description'].touched || submitted) && firstFormGroupControl['description'].errors?.['required']">
+            Opis je obavezno polje
+        </span> -->
+        </div>
+
+
+        <!-- <form class="forms-sample">
+          <div style="
+          display: block;width: 100%;  margin: 10% 40% 0% 40%;">
+            <button (click)="prevPage()" class="btn btn-outline-secondary btn-rounded btn-icon">
+              <i style="color:black" class="icon-arrow-left"></i>
+            </button>
+            <button (click)="nextPage()" class="btn btn-outline-secondary btn-rounded btn-icon">
+              <i style="color:black" class="icon-arrow-right"></i>
+            </button>
+          </div>
+        </form> -->
+      </div>
+    </div>
+  </div>
+  </div> 
+</div>

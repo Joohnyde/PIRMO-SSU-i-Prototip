@@ -1,0 +1,63 @@
+
+    <div class="content-wrapper">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="home-tab">
+           
+
+            <div id="finiSmooth2" class="tab-content tab-content-basic">
+              <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
+                <div class="row">
+                  <div class="col-sm-12 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">{{content[getLang()].poststitle}}</h4>
+                        <p class="card-description">
+                          {{content[getLang()].postsdesc1}} <code>{{content[getLang()].postsdesc2}}</code> {{content[getLang()].postsdesc3}}
+                        </p>
+                        <div class="table-responsive">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th style="width: 80%">{{content[getLang()].tabhead1}}</th>
+                                <th style="width: 10%">{{content[getLang()].tabhead2}}</th>
+                                <th style="width: 10%">{{content[getLang()].tabhead3}}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr (click)="setSelectedForEditing(post)" *ngFor="let post of getFiltered()" 
+                              
+                              [ngClass]="{'selectedPostInTable': selectedForEditing === post}"
+                              >
+                                <td>{{post.naslovi[getLang()]}}</td>
+                                <td>{{getParsedDatum(post.datum)}}</td>
+                                <td><label class="badge badge-success" style="color: {{post.boja}};
+                                  border: 1px solid {{post.boja}};">{{post.kategorije[getLang()]}}</label></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                
+                <app-form id="finiSmooth" *ngIf="!isSelectedForEditing()" [autor]="getUsername()"
+                 [msgComp]="this" [post]="selectedForEditing"></app-form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
+
+    <!--
+    <footer class="footer">
+      <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+      </div>
+    </footer>
+     partial -->
