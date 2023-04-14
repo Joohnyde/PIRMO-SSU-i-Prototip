@@ -1,28 +1,30 @@
 [
+    
     {
-        "poststitle":"Ваши постови",
-        "postsdesc1":"Овдје можете видјети Ваше објаве и измјенити их",
-        "postsdesc2":"кликом",
-        "postsdesc3":"на њих",
-        "tabhead1":"Наслов",
-        "tabhead2":"Датум објаве",
-        "tabhead3":"Категорија"
-        },
-        {
-            "poststitle":"Vaši postovi",
-            "postsdesc1":"Ovdje možete vidjeti Vaše objave i izmjeniti ih",
-            "postsdesc2":"klikom",
-            "postsdesc3":"na njih",
-            "tabhead1":"Naslov",
-            "tabhead2":"Datum objave",
-            "tabhead3":"Kategorija"
-            }, {
-                "poststitle":"Postimet tuaja",
-                "postsdesc1":"Këtu mund të shihni postimet tuaja dhe t'i modifikoni ato",
-                "postsdesc2":"duke klikuar",
-                "postsdesc3":"asaj",
-                "tabhead1":"Titullin",
-                "tabhead2":"Data e publikimit",
-                "tabhead3":"Kategoria"
-                }
+        "poststitle": "Vaši postovi",
+        "postsdesc1": "Ovdje možete vidjeti Vaše objave i izmjeniti ih",
+        "postsdesc2": "klikom",
+        "postsdesc3": "na njih",
+        "tabhead1": "Naslov",
+        "tabhead2": "Datum objave",
+        "tabhead3": "Kategorija"
+    },
+    {
+        "poststitle": "Ваши постови",
+        "postsdesc1": "Овдје можете видјети Ваше објаве и измјенити их",
+        "postsdesc2": "кликом",
+        "postsdesc3": "на њих",
+        "tabhead1": "Наслов",
+        "tabhead2": "Датум објаве",
+        "tabhead3": "Категорија"
+    },
+    {
+        "poststitle": "Postimet tuaja",
+        "postsdesc1": "Këtu mund të shihni postimet tuaja dhe t'i modifikoni ato",
+        "postsdesc2": "duke klikuar",
+        "postsdesc3": "asaj",
+        "tabhead1": "Titullin",
+        "tabhead2": "Data e publikimit",
+        "tabhead3": "Kategoria"
+    }
 ]

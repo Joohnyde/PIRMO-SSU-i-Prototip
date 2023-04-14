@@ -1,16 +1,5 @@
 [
     {
-        "formDesc":["Измјена објаве", "Додавање нове објаве"],
-        "title":"Наслов",
-        "category":"Категорија",
-        "thumbnail":"Насловница",
-        "upload":"Отпреми",
-        "save":"Сачувај",
-        "cancel":"Откажи",
-        "select":"Одабери",
-        "opis":"Унесите опис"
-    },
-    {
         "formDesc":["Izmjena objave","Dodavanje nove objave"],
         "title":"Naslov",
         "category":"Kategorija",
@@ -20,6 +9,17 @@
         "cancel":"Otkaži",
         "select":"Odaberi",
         "opis":"Unesite opis"
+    },
+    {
+        "formDesc":["Измјена објаве", "Додавање нове објаве"],
+        "title":"Наслов",
+        "category":"Категорија",
+        "thumbnail":"Насловница",
+        "upload":"Отпреми",
+        "save":"Сачувај",
+        "cancel":"Откажи",
+        "select":"Одабери",
+        "opis":"Унесите опис"
     },
     {
         "formDesc":["Redakto postimin","Shtimi i një postimi të ri"],

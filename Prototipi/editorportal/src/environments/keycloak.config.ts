@@ -5,9 +5,9 @@
 import { KeycloakConfig } from 'keycloak-js';
 
 const keycloakConfig: KeycloakConfig = {
-    url: 'http://localhost:8080/',
-    realm: 'bewell-realm',
-    clientId: 'bewell-client',
+    url: 'http://prototype.pir-mo.com:8080/',
+    realm: 'iportal-realm',
+    clientId: 'iportal-client',
 };
 
 export default keycloakConfig;

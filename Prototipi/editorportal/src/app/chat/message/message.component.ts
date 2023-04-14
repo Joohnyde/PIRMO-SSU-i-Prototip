@@ -39,8 +39,8 @@ interface PostsText{
 })
 export class MessageComponent implements OnInit, AfterViewInit {
   public mjeseci: string[][] = [
-    ["Јануар","Фебруар","Март","Април","Мај","Јун","Јул","Август","Септембар","Октобар","Новембар","Децембар"],
     ["Januar","Februar","Mart","April","Maj","Jun","Jul","Avgust","Septembar","Oktobar","Novembar","Decembar"],
+    ["Јануар","Фебруар","Март","Април","Мај","Јун","Јул","Август","Септембар","Октобар","Новембар","Децембар"],
     ["Janar", "Shkurt", "Mars", "Prill", "Maj", "Qershor", "Korrik", "Gusht","Tetor", "Shtator", "Nëntor", "Dhjetor"]
   ];
   public usersList: User[] = [];

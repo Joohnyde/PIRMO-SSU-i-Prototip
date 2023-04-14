@@ -25,6 +25,7 @@ interface HeaderText{
    menuitem1: string ;
    menuitem2: string;
    addNew: string;
+   import: string;
 
 }
 

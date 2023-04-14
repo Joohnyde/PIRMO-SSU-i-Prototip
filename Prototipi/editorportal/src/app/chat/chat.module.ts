@@ -11,6 +11,7 @@ import { FilePickerDirective } from './form/file-picker.directive';
 import { NgxEditorModule } from 'ngx-editor';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/d
   providers:[
 
     
-    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}},
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
 
   imports: [

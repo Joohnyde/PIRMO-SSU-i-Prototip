@@ -15,6 +15,7 @@ import { toHTML } from 'ngx-editor';
 import { FilePickerDirective } from './file-picker.directive';
 // import { NgxImageCompressService } from 'ngx-image-compress';
 import compress from 'compress-base64';
+import { Router } from '@angular/router';
 interface FormText {
   formDesc: string[];
   title: string;
@@ -133,7 +134,7 @@ export class FormComponent implements OnInit,OnDestroy {
     return this._selectedFiles[0].name;
   }
 
-  constructor(
+  constructor(private router: Router,
     private postService: PostService | null
     // , public imageCompress: NgxImageCompressService
   ) { }
@@ -169,11 +170,13 @@ export class FormComponent implements OnInit,OnDestroy {
       if (!this.obradaUToku) {
         this.obradaUToku = true;
         this.savePostForLang();
-        if(this.postService)
-        this.postService.PutBPost(this.bpost).subscribe((data: {}) => {
-        });
+        // if(this.postService)
+        // this.postService.PutBPost(this.bpost).subscribe((data: {}) => {
+        // });
         
         alert("Uspesna izmena");
+        this.router.navigate(['/']);
+
         window.location.reload();
       }
     // }

@@ -41,9 +41,9 @@ export class CategoriesService {
 
 
     var kategorije:String[][] = [
-      ["Хардвер", "Софтвер", "Интернет","Игрице"],
-      ["Хардвер", "Софтвер", "Интернет","Игрице"],
-      ["Хардвер", "Софтвер", "Интернет","Игрице"],];
+      ["Hardver", "Softver", "Internet","Igrice"],
+      ["Hardver", "Softver", "Internet","Igrice"],
+      ["Hardver", "Softver", "Internet","Igrice"],];
 
     return kategorije;
     // return this.http
@@ -57,7 +57,7 @@ export class CategoriesService {
     hardver.kategorije = [];
     var sHardver1 = new SimplifiedCategory();
     sHardver1.pid = "15656e54-4d95-416a-be31-1bffcddc2381";
-    sHardver1.naziv = "Хардвер";
+    sHardver1.naziv = "Hardver";
     hardver.kategorije.push(sHardver1);
     hardver.kategorije.push(sHardver1);
     hardver.kategorije.push(sHardver1);
@@ -67,7 +67,7 @@ export class CategoriesService {
     softver.kategorije = [];
     var sSoftver1 = new SimplifiedCategory();
     sSoftver1.pid = "15116e54-4d95-416a-be31-1bffcddc2381";
-    sSoftver1.naziv = "Софтвер";
+    sSoftver1.naziv = "Softver";
     softver.kategorije.push(sSoftver1);
     softver.kategorije.push(sSoftver1);
     softver.kategorije.push(sSoftver1);
@@ -78,7 +78,7 @@ export class CategoriesService {
     internet.kategorije = [];
     var sInternet1 = new SimplifiedCategory();
     sInternet1.pid = "15656e54-aa95-416a-be31-1bffcddc2381";
-    sInternet1.naziv = "Интернет";
+    sInternet1.naziv = "Internet";
     internet.kategorije.push(sInternet1);
     internet.kategorije.push(sInternet1);
     internet.kategorije.push(sInternet1);
@@ -88,7 +88,7 @@ export class CategoriesService {
     igrice.kategorije = [];
     var sIgrice1 = new SimplifiedCategory();
     sIgrice1.pid = "15116e54-4d95-416a-be31-1aafcddc2381";
-    sIgrice1.naziv = "Игрице";
+    sIgrice1.naziv = "Igrice";
     igrice.kategorije.push(sIgrice1);
     igrice.kategorije.push(sIgrice1);
     igrice.kategorije.push(sIgrice1);
